@@ -1,18 +1,1 @@
 
----
-
-### 2.2 Makefile (simple, pour compiler le code)
-
-```makefile
-CC = gcc
-CFLAGS = -Wall -O2
-TARGET = bin/weather_station
-
-all: $(TARGET)
-
-$(TARGET): src/main.c
-	mkdir -p bin
-	$(CC) $(CFLAGS) src/main.c -o $(TARGET)
-
-clean:
-	rm -rf bin
