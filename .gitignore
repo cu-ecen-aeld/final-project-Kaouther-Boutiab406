@@ -1,0 +1,8 @@
+# Fichier : .gitignore
+
+*.elf
+*.hex
+*.o
+*.d
+.DS_Store
+build/
