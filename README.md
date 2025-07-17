@@ -1,22 +1,16 @@
-# Embedded Weather Station Project
+<!-- Fichier : README.md -->
 
-## Description
+# 🌡️ Capteur de Température avec LCD 16x2
 
-Ce projet embarqué consiste à créer une station météo sur Raspberry Pi avec un capteur DHT22 pour mesurer la température et l’humidité, affichage sur écran LCD I2C, et stockage local des données.
+## 🎯 Objectif
+Lire la température via un capteur LM35 et l'afficher sur un écran LCD 16x2 connecté à un microcontrôleur ATmega328P.
 
-## Matériel utilisé
+## 🧰 Matériel
+- ATmega328P (Arduino Uno ou autre)
+- Capteur de température LM35
+- Écran LCD 16x2 (HD44780)
+- Résistances, breadboard, câbles
 
-- Raspberry Pi 4
-- Capteur DHT22
-- Écran LCD 16x2 I2C
-
-## Build System
-
-Nous utilisons Yocto pour construire l’image Linux embarquée avec notre application C incluse.
-
-## Démarrage
-
+## 🛠️ Compilation
 ```bash
 make
-./bin/weather_station
-
